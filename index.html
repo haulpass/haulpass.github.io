@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Pleb Game</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/LowlyAnalyst.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/LowlyAnalyst.data",
+        frameworkUrl: "Build/LowlyAnalyst.framework.js",
+        codeUrl: "Build/LowlyAnalyst.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Pleb Game",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
